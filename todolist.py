@@ -28,7 +28,7 @@ class ToDoApp:
         self.root = root
         self.root.title("To-Do List")
         self.root.geometry("500x400")
-        self.root.configure(bg="#f0f0f0")  # Light background
+        self.root.configure(bg="#f0f0f0")  
 
         self.task_manager = task_manager
 
@@ -47,7 +47,7 @@ class ToDoApp:
         self.entry_task = tk.Entry(self.root, width=50, font=("Helvetica", 16))
         self.entry_task.pack(pady=10)
 
-        # Define buttons with simpler colors and styles
+      
         self.button_add_task = tk.Button(self.root, text="Add Task", width=50, command=self.add_task, bg="#4CAF50", fg="white", font=("Helvetica", 12))
         self.button_add_task.pack(pady=5)
 
